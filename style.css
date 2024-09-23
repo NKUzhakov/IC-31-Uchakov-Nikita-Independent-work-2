@@ -1,0 +1,476 @@
+/*1.1.	CSS Синтаксис */
+/*p{
+    
+    color: brown;
+    text-align: center;
+}*/
+
+/*1.2.	CSS Селектори/ */
+#CoolHeader{
+    text-align: center;
+    color: aqua;
+    font-size: large;
+}
+p.special{
+    text-align: right;
+    color: bisque;
+    background-color: blue;
+}
+p.large{
+    font-size: 300%;
+}
+/*
+*{
+    text-align: center;
+  color: blue;
+}
+*/
+/*
+h3,h4,h5,h6{
+    background-color: rgb(247, 140, 2);
+    padding: 20px;
+}*/
+/*1.12.	CSS Посилання. */
+
+/*
+a:link{
+    color: black;
+    text-decoration: none;
+}
+a:visited{
+    color: brown;
+    text-decoration: none;
+}
+a:hover{    
+    color: aqua;
+    text-decoration: underline;
+    background-color: bisque;
+}
+a:active{
+    color: blue;
+    text-decoration: underline;
+}
+a.specialLink{
+    color: aquamarine;
+    text-decoration: underline;
+}*/
+/*a:link, a:visited{
+    background-color: white;
+    border: 2px solid rgb(3, 183, 27) ;
+    color: rgb(0, 202, 10);
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover, a:active{
+    background-color: rgb(0, 202, 10);
+    color: white; 
+    text-decoration: none;   
+}*/
+/*
+a:link, a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: green;
+    color: white;
+  }*/
+  /*1.13.	CSS Списки. */
+  /*
+  ul.a{
+    list-style-type: circle;
+  }
+  ul.b{
+    list-style-type: square;
+  }
+  ol.c{
+    list-style-type: lower-alpha;
+  }
+  ol.d{
+    list-style-type: upper-roman;
+  }
+  ul#imageList{
+    list-style-image: url('https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_66660788f92a1c63a3184c3d_66660792fab3712653ff279e/scale_1200');
+  }
+  ul#defaultList{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }*/
+/*
+  ul, ol{
+    background-color: blue;
+    padding: 25px;    
+  }
+  ul li{
+    background-color: greenyellow;
+    margin-left: 35px;
+    padding: 10px;
+  }
+  ol li{
+    background-color: aquamarine;
+    padding: 10px;
+  }*/
+
+
+  ul#userList{
+    border-left: 2px solid greenyellow;
+    padding: 10px 20px;
+    background-color: rgb(181, 181, 181);  
+    list-style-type: none;  
+    margin-left: 20px;
+  }
+
+  /*1.14.CSS Таблиці.Межі*/
+  /*table{
+    border: 1px solid rgb(0, 0, 0);
+    width: 100%;
+}
+th{
+    height: 70px;
+}*/
+
+table #t4, #t4 td, #t4 th {
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  #t4tr:hover {background-color: #838181;}
+ table #t4 {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #t4 th, #t4 td {
+    padding: 30px;
+  }
+
+
+  table #t5{    
+    width: 100%;
+  }
+  #t5 th{
+    background-color: rgb(6, 165, 0);
+  }
+  #t5 td, #t5 th {    
+    text-align: left;
+    padding: 20px;
+  }
+  #t5 tr:nth-child(odd){
+    background-color: #838181;
+  }
+  #t5 caption{
+    caption-side: bottom;
+  }
+
+  /*2.1.	Заокруглені кути. */
+  #rcorners1 {
+    border-radius: 25px;
+    background: #73AD21;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;  
+  }
+  
+  #rcorners2 {
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;  
+  }
+  
+  #rcorners3 {
+    border-radius: 25px;
+    background: url('https://azbyka.ru/wp-content/uploads/2016/07/priroda.jpg');
+    background-position: left top;
+    background-repeat: repeat;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;  
+  }
+  #matrix{
+    border-radius: 15px / 50px ;
+    background: url('https://thecode.media/wp-content/uploads/2021/03/9.jpg');
+    background-position: left top;
+    background-repeat: repeat;
+    background-size: 60%;
+    width: 800px;
+    height: 600px; 
+  }
+  /*2.2.	CSS анімації. */
+  @keyframes animExamp1{
+    from{
+      background-color: #73AD21;
+    }
+    to{
+      background-color: #ad2121;
+    }    
+  }  
+  @keyframes animExamp2{
+    0%{
+      background-color: #73AD21;
+    }
+    50%{
+      background-color: #ad2121;
+    }  
+    100%{
+      background-color: #73AD21;
+    }
+  }  
+  @keyframes animExamp3{
+    0%{
+      background-color: #73AD21; left: 0px;top: 0px;
+    }
+    25%{
+      background-color: #fc6c05; left: 100px;top: 0px;
+    }
+    50%{
+      background-color: #0a0ef7; left: 100px;top: 100px;
+    }
+    75%{
+      background-color: #d50e07; left: 0px;top: 100px;
+    }
+    100%{
+      background-color: #73AD21; left: 0px;top: 0px;
+    }
+    
+  }
+  #animatedDiv{
+    width: 100px;
+    height: 100px;
+    background-color: #73AD21;
+    animation-name: animExamp3;
+    animation-duration: 2s;
+    animation-delay: 4s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+  }
+
+  /*2.3.	Підказки CSS. */
+  .tooltip{
+    position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  }
+  .tooltip .tooltiptext{
+    visibility: hidden;
+    width: 120px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 5px 0;
+    top: -5px;
+    left: 15%;
+  }
+  .tooltip:hover .tooltiptext{
+    visibility: visible;
+  }
+  /*2.4.	Кнопки CSS. */
+  .button{
+    background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  }
+  .button2{
+    background-color:#d50e07;
+    font-size: 10px;
+    width: 25%;
+  }
+  .button2:hover{
+    background-color: #f3db06;
+    color: #0a0ef7;
+  }
+  .button3{
+    background-color:#3c72de;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+  .button4{
+    background-color:#f3db06;
+    font-size: 24px;
+    border-radius: 50%;
+  }
+  .button5{
+    background-color:#ffffff;
+    color: black;    
+    border: 2px solid green;
+  }
+  .disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  .btn-group .button{
+    background-color: #04AA6D;
+    border: 1px solid green;
+  color: white;
+  padding: 15px 32px;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;   
+  cursor: pointer;
+  width: 150px;
+  /*float: left;*/
+  }
+  .container .btn{
+    position: absolute;
+  margin-left: -150px;
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;  
+  
+  }
+  /*2.5.CSS Пагінація. */
+  .pagination{
+    display: inline-block;
+  }
+  .pagination a{
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+    border: 1px solid gray;
+  }
+  .pagination a.active{
+    background-color: #73AD21;
+    color: #ddd;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  .pagination a:hover:not(.active){
+    background-color: #838181;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .center{
+    text-align: center;
+  }
+  /*2.6.	Створення стовпців CSS. */
+  .newspaper{
+    /*column-count: 3;*/
+    column-gap: 100px;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+    column-rule-color: #0a0ef7;
+    column-width: 100px;
+  }
+ /*2.7.	Випадаючі списки CSS. */
+ .dropdown {
+  position: relative;
+  display: inline-block;
+}
+ /*.dropdown-content {
+  display: none;
+    background-color: #727272;
+    padding: 12px 16px;
+ }*/
+ .dropdown:hover .dropdown-content {
+  display: block;
+ }
+
+ .dropbtn{
+  background-color: #73AD21;
+  color: white;
+  padding: 16xp;
+  font-size: 16;
+  cursor: pointer;
+  border: none;
+ }
+ .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #c4c4c4;
+    min-width: 160px;
+    right:0px;
+ }
+ .dropdown-content a{
+  color: black;
+  text-decoration: none;
+  padding: 12px 16px;
+  display: block;
+ }
+ .dropdown-content a:hover{
+  background-color: #b0ffb4;
+ }
+ .dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+  
+}
+/*2.9.Тіньові ефекти CSS */
+#example2{
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green;
+  margin: 20px;
+}
+.card{
+  width: 250px;
+  box-shadow: 7px 7px 5px rgb(114, 114, 114);
+  text-align: center;
+}
+.carddescription{
+  padding: 15px;
+}
+/*2.11.	Переходи CSS*/
+.tranzitdiv {
+  width: 100px;
+  height: 100px;
+  background: rgb(1, 181, 10);
+  transition: width 2s, height 2s, transform 2s;
+  
+}
+.tranzitdiv:hover {
+  width: 300px;
+  height: 300px;
+  transform: rotate(180deg);
+}
+/*2.12.	Текстові ефекти CSS. */
+p.test1 {
+  white-space: nowrap;
+  width: 200px; 
+  border: 1px solid #000000;
+  overflow: hidden;
+  text-overflow: clip;
+}
+p.test2 {
+  white-space: nowrap;
+  width: 200px; 
+  border: 1px solid #000000;
+  overflow: hidden;
+  text-overflow: ellipsis;  
+}
+p.test2:hover{
+  overflow: visible;
+}
+p.test{
+  width: 150px;
+  border: 1px solid #000000;
+  word-wrap: break-word;
+}
